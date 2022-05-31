@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --background-default: hsl(217, 54%, 11%);
+  --background-paper: hsl(216, 50%, 16%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(215, 51%, 70%);
+  --line-color: hsl(215, 32%, 27%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit";
+  color: var(--text-secondary);
+}
+
+body {
+  background: var(--background-default);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--background-paper);
+  padding: 25px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  margin-top: 70px;
+}
+
+.card .image-container {
+  position: relative;
+}
+
+.card .image-container .main-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+}
+
+.card .image-container .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100% - 4px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 255, 247, 0.4);
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.card .image-container:hover .mask {
+  opacity: 1;
+}
+
+.card h1 {
+  color: var(--text-primary);
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.card h1:hover {
+  color: var(--cyan);
+}
+
+.card .description {
+  text-align: start;
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .info .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .info .details img {
+  margin-right: 5px;
+}
+
+.card .info .details .ethereum {
+  color: var(--cyan);
+}
+
+.card .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid var(--line-color);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.card .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  border: 1px solid var(--text-primary);
+  margin-right: 15px;
+}
+
+.card .author span {
+  color: var(--text-primary);
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.card .author span:hover {
+  color: var(--cyan);
+}
+/*# sourceMappingURL=style.css.map */
